@@ -1,0 +1,133 @@
+*{ /*Resetei as margens internas e externas da pagina inteira*/
+    margin:0;
+    padding:0;
+}
+
+html, body{ /*Condicionei a altura da pagina como 100% do tamanho do dispositivo do usuario*/
+    height:100%;
+}
+
+
+fieldset{
+    background-color:rgba(255, 127, 202, 0.705);
+    background-image: url(../imagens/comendo2.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    
+
+    
+}
+
+
+form{ /*Configuei o formulario como um todo*/
+    width:96%; /*Largura*/
+    max-width:600px; /*Largura maxima*/
+    margin: 0 auto; /*Margem externa e centralização*/
+    text-align:center; /*Alinhei o conteudo do Formulario no centro*/
+}
+
+form legend{ /*Chamei pra alterar somente a legenda do formulario*/
+    text-align:left; /*Alinhei a legenda para a esquerda*/
+    font-size:16px; /*Defini o tamnho da fonte*/
+}
+
+form > select >.nomeemail > h3{
+    margin-top:2px;
+    display: inline-block;
+}
+form fieldset{ /*Chamei o grupo de formularios*/
+    margin-top:40px;
+    padding:20px 40px; /*Defini o espaçamento da borda pra dentro (direita/esquerda e cima/baixo)*/
+    border:1px dotted red; /*Configurei a bora do fieldset como 1px de largura, pontilhada e vermelho*/
+}
+
+form input[type="text"]:focus, form input[type="text"]:hover{ /*chamei o input dentro do formulario do tipo "text" para quando for clicado/estiver em foco */
+    background-color:rgb(207, 207, 207); /*Quando estiver em foco o fundo ficara nesta cor*/
+    outline:none; /*Retirei a outline que os navegadores alteram por padrão definindo especificamente como none/0*/
+    color:white;
+    border: 1px solid #ccc; /*Defini uma borda personalizada pois alguns navegadores alteram quando nao tem valor*/
+}
+
+form input[type="text"]{ /*Chamaei o input dentro do formulario do tipo TEXT*/
+    margin-top:10px; /*deifini o espaçamento da margem pra fora dos elementos*/
+    width:80%; /*Defini a largura como 80% da janela do usuario*/
+    padding: 10px 13px; /*Defini o espaçamento da margem pra fora dos elementos*/
+    display: inline-block; /*Chamei o inline-block*/
+    border: 1px solid #ccc;/*Defini uma borda personalizada pois alguns navegadores alteram quando nao tem valor*/
+}
+
+form select{ /*Chamei a funcão select dentro do fomulario*/
+    width:calc(80% + 26px); /*Função pra corrigir uma divergencia do design responsivo*/
+    margin-top: 10px; /*Defini  espaçamente da parte de cima do elemento pra fora*/
+    display: inline-block; /*Defini como inline-block*/
+    padding: 10px 10px; /*Defini o espaçamento do elemento pra dentro (esquerda/direita e cima/baixo)*/
+    border: 1px solid #ccc;/*Defini uma borda personalizada pois alguns navegadores alteram quando nao tem valor*/
+}
+
+form select[desabled]{ /*chamei a opção desabilitada da seleção de idade*/
+    color:#ccc;
+}
+
+form h3{ /*Formatando o espaçamento dos textos escritos na h3*/
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.cidades{ /*formatando as opçoes de cidade*/
+    margin-top:20px;
+    text-align:left;
+    display: inline-block;
+}
+
+.cidades span{/*Formatando os textos na span das opções de cidade*/
+    margin-top:20px;
+    margin-left:13px;
+
+}
+
+.comidas { /*formatando as opçoes de comida*/
+    margin-top:20px;
+    text-align:left;
+    display: inline-block;
+}
+
+.comidas span{ /*Formatando os textos na span das opções de comida*/
+    margin-left:13px;
+}
+
+input[type="submit"]{ /*formatando o botão do tipo submit (cadastrar)*/
+    margin-top:10px;
+    height:25px;
+    width:80px;
+    background-color:#dadada;
+}
+
+input[type="submit"]:hover{ /*formatando quando o mouse passa por cima do cadastrar*/
+    background-color:#b8b8b8;
+    color:white;
+    cursor: pointer; /*Alterando o cursor do mouse pra quando passar por cima do cadastrar*/
+}
+
+p{ /*Formatando os textos na tag p*/
+    margin:20px 20px;
+    font-size:12px;
+    color:black;
+}
+
+textarea{ /*formatando o textarea*/
+    width:500px;
+    height:80px;
+    padding:10px 13px;
+    font-family:arial;
+    resize:none;
+    background-image:url(../imagens/comendo.png);
+    background-position:right;
+    background-repeat:no-repeat;
+    background-size:150px 150px;
+}
+
+textarea:hover, textarea:focus{ /*formatando o textarea pra quando o mouse passar por cima*/
+    background-color: #ccc;
+
+}

@@ -1,0 +1,34 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+html, body{
+    height:100%;
+}
+
+.box{
+    width:100%;
+     margin:80px auto;  
+     text-align:center; 
+    background-color:rgb(198, 134, 255);
+}
+
+.item{
+    color: rgb(84, 0, 158);
+    width: 100%;
+
+    display:inline-block;
+
+}
+
+.item img{
+    width: 16%;
+}
+
+
+.item p{
+    display: inline-block;
+    background-color:aqua;
+
+}

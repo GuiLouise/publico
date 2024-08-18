@@ -1,0 +1,47 @@
+*{   /*PROPIEDADES DE RESET*/
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+
+}
+
+
+
+
+
+
+/*tem que ser igual
+a[href="https://www.google.com.br"]{
+    background-color: yellow;
+}
+
+[href="https://www.google.com.br"]{
+    background-color:red;
+}*/
+
+/*pode ser um trecho do atributo
+a[href*="googl"], a[href*="face"]{
+    background-color: blue;
+    color:white;
+
+}*/
+
+/*
+a[attr~="google"]{ /*PROCURE ENTRE OS ESPAÇOS DO ATRIBUTO*/
+/*    background-color:chocolate;
+    color:black;
+}*/
+
+/*pra procurando quando começa com a palavra especificada
+a[attr^="google"]{
+    background-color: aqua;
+}
+*/
+
+/* ATACA O ATRIBUTO QUE A ULTIMA PALAVRA SEJA A ESPECIFICADA
+a[attr$="instagram"]{
+    background-color: violet;
+}*/

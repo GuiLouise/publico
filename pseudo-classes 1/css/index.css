@@ -1,0 +1,62 @@
+*{
+    padding:0;
+    margin:0;
+}
+html, body{
+    height:100%;
+}
+
+.teste1, .teste2, .teste3, .teste4{
+    width: 150px;
+    height: 150px;
+    background-color:gray;
+    margin-top: 30px;
+    margin-left: 10px;
+    display:inline-block;
+
+}
+
+.teste1{
+    background-color:red;
+}
+
+.teste2{
+    background-color:blue;
+}
+
+.teste4{
+    background-color:rgb(208, 212, 212);
+}
+
+.teste1:hover{
+    background-color:brown;
+}
+
+.teste2:hover{
+    background-color:rgb(57, 57, 236);
+}
+
+.teste3:hover{
+    background-color:rgb(156, 156, 156);
+}
+
+.teste4:hover{
+    background-color:rgb(174, 175, 179);
+}
+
+.teste2:active{
+    background-color:aqua;
+}
+.teste5:focus{
+    background-color:burlywood;
+}
+
+.textarea{
+    height: 32px;
+    width: 80px;
+}
+
+.link1:link{
+    color:black;
+
+}

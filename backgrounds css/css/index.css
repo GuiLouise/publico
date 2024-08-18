@@ -1,0 +1,24 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+html, body{
+    height:auto;
+}
+
+.bg{
+
+    width:500px;
+    height:500px;
+    margin:0 auto;
+
+    /*BACKGROUNDS*/
+
+    background-color:aqua;
+    background-image: url('../imagens/danki_bg.jpg');
+    background-size: 100% auto;
+    background-repeat: repeat-x repeat-y;
+
+
+}

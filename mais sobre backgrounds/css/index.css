@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+html, body{
+    height:100%;
+}
+
+.bg{
+    width:100%;
+    height:30vh;
+    background-image: url(/imagens/sunset.jpg);
+    background-color:cornflowerblue;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment:fixed;
+    
+}
+
+.box{
+    width:900px;
+    height:2000px;
+    background-color:aqua;
+
+}

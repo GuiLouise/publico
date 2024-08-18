@@ -1,0 +1,17 @@
+
+html,body{
+    height: 100%;
+}
+
+.box{
+    width: 60%;
+    height: auto;
+    background: greenyellow;
+    color: red;
+
+}
+
+.box2{
+    height: 500px;
+    color: initial;
+}

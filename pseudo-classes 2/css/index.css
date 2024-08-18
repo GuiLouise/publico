@@ -1,0 +1,84 @@
+*{/*Reseta as configurações de margens e espaçamentos*/
+    padding: 0;
+    margin: 0;
+}
+
+html, body{ /*Define que a altura da pagina é automatica e referente a tela do usuario*/
+    height:auto;
+}
+
+ul{ /*Ataca todos as "ul" do codigo hmtl*/
+    list-style-position:inside;
+}
+
+ul li:nth-of-type(2){ /*Ataca todos os elementos do tipo que foi previamente declarado na chamada*/
+    color:red;
+}
+
+ul li:nth-child(4){ /*Ataca o elemento filho, nesse caso o 4° elemento conforme declarado*/
+    color:yellow;
+}
+
+.box .item:hover{
+    background-color:rgb(207, 52, 52);
+}
+
+
+.item{/*CRIANDO UM BACKGROUND COM CORES E BORDAS*/
+
+box-sizing: border-box; /*Define a borda para dentro da div*/
+color:white;
+float: left;
+width: 33.3%; /*LARGURA*/
+height: 200px; /*ALTURA*/
+background-color:red;/*DEFINE A COR DO BACKGROUND DA DIV*/
+border:1px solid black; /*CRIA UMA BORDA DE 1 PIXEL SOLIDA E NA COR PRETA*/
+}
+
+.box div:last-of-type{ /*ATACA DENTRO DA CLASSE "BOX" SOMENTE A ULTIMA DIV*/
+    background-color: blue; /*DEFINIU A COR D0 BACKGROUND*/
+}
+
+.box p:last-of-type, .box p:last-of-type{ /*Pode ser feito a chamada para mais um ataque ate mesmo com pseudo-classes*/
+    background-color:gray;
+}
+
+.box2 > div{/*Criei 3 novas caixas violetas com bordas*/
+    width:33.3%;
+    float:left;
+    height:150px;
+    background-color:red;
+    box-sizing:border-box;
+    border: 1px solid black;
+    color:white; /*Defini a cor das letras no conteudo das div da box2*/
+}
+
+.box2 div:last-of-type{/*Chamei a ultima div da BOX2*/
+/*.box2:last-child{...} Tambem serveria para chamar a mesma div em questão*/
+   color:black;
+}
+
+.box2 div:not(.one){ /*Chamei todas as div da box2 que não era da classe .one*/
+    color:white; /*ataquei a cor da letra*/ 
+}
+
+.box2 div:not(.two, .three){ /*chamei todas as div da box2 que não eram das classes .two e .three*/
+    background-color:blue; /*ataquei somente a cor de fundo*/
+}
+
+p:empty{ /*Busca todos os itens especificados que estão vazios*/
+    width:150px; /*definindo largura do background*/
+    height:150px; /*Definindo altura do background*/
+    background-color:aqua; /*definindo cor do background*/
+} /*Não funcionou sem ter algum conteudo previo. nao sei por que ainda*/
+
+.box4 .p:after{ /*Adiciona conteudo apos o item selecionado*/
+    content:' Guilherme'; /*especifica o conteudo, neste caso como texto*/
+    background-color:red; /*muda a cor do background para vermelho*/
+}
+ 
+.box :last-of-type:hover{ /*Utilezei de duas pseudo-classes
+    para atacar um elemento especifico*/
+    background-color:rgb(82, 106, 173);/*Mudei o backgroun para quando o mouse passar por cima*/
+}
+

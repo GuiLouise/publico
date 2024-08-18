@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height:100%;
+}
+
+/*
+table{
+    width:300px;
+    border-collapse:collapse;
+    margin: 0 auto;
+}
+
+table tr td{
+    height:30px;
+    border: 1px solid black;
+    background-color:aqua;
+    text-align:center;
+}
+*/
+.menu-fixed{
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background: rgb(55, 135, 255);
+
+}
+
+.box{
+    width: 100%;
+    height: 1000px;
+    padding-top:80px;
+    background: rgb(155, 207, 250);
+    color: rgb(0, 0, 0);
+}
+
+.box-esquerda{
+    position:absolute;
+    width:200px;
+    height:200px;
+    background-color:aqua;
+    left:10px;
+    bottom:75px;
+}
+
+.rodape{
+    position: absolute;
+    width:100%;
+    height:75px;
+    background-color:blueviolet;
+    text-align: center;
+    
+}

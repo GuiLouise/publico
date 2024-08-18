@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+}
+html, body{
+    height:100%;
+}
+
+.parent{
+    background-color:blue;
+    width: 100%;
+    padding: 90px 0;
+    text-align: center;
+
+}
+
+.item{  
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color:green;
+    margin: 20px 0;
+}  
+
+/*.parent div:nth-of-type(2)  div.item{ /*Essa função pega entre os irmaos, o que esta na posição 2. Usando do operador
+    ">" especifiquei que quero o item dentro da div*/
+    /*background-color: red; /*mudei a cor do background somente da div na 2° poosição
+
+}*/
+
+.parent div:nth-of-type(2n + 1)  div.item{ /*Neste caso estou especificando que quero que começando da primeira div, a cada 2
+    aplique o background*/
+    background-color: red; /*mudei a cor do background somente da div na 2° poosição*/
+
+}
+.parent  p:first-of-type{ /*Peguei o primeiro do tipo "p"*/
+    color:red;/*Mudei a cor do texto para vermelho*/
+}

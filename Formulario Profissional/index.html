@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Profissional</title>
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <font face="arial">
+</head>
+
+
+<body>
+    <form>
+        <fieldset> <!--criei grupo de elementos de formulario-->
+            <legend><b>Cadastre-se!</b></legend> <!--Criei uma legenda/titulo do formulario dentro do fieldset-->
+            
+            <h3 class="nomeemail">Nome completo:</h3>
+            <div><input type="text" name="Nome" placeholder="Digite seu nome"/></div><!--Criei um imput com um placeholder com um texto do que preciso nele-->
+            <h3 class="nomeemail">Seu mail:</h3>
+            <div><input type="text" name="Nome" placeholder="Digite seu e-mail"/></div>
+
+            <h3>Selecione sua idade:</h3>
+            <div>
+                <select name="lista"> <!--Aqui criei uma box com opções predeterminadas para que o usuario escolha uma-->
+                    <option disabled selected>Qual sua idade?</option> <!--Disabled desabilitou essa primeira opção que aparece como titulo dessa box
+                    e a propiedade selected colocou essa opção sendo a primeira mais especificamente-->
+                    <option>20</option>
+                    <option>entre 20 e 40</option>
+                    <option>maior que 40</option>
+                </select>
+            </div>
+
+            <h3>Qual sua cidade?</h3>
+            <div class="cidades"><!--Criando opções pra escolher uma cidade-->
+            
+                <div><input type="radio" name="cidade" value=""/><span>Belo Horizonte</span></div>
+                <div><input type="radio" name="cidade" value=""/><span>Contagem</span></div>
+                <div><input type="radio" name="cidade" value=""/><span>Sabará</span></div>
+            </div>
+
+            <h3>Qual sua comida preferida durante a janta?</h3> <!--Criando um checklist de comidas-->
+            <div class="comidas">
+                
+                <div><input type="checkbox" name="comida" value=""/><span>Pizza</span></div>
+                <div><input type="checkbox" name="comida" value=""/><span>Hamburguer</span></div>
+                <div><input type="checkbox" name="comida" value=""/><span>Lasanha</span></div>
+            </div>
+
+            <div><h3>Agora nos diga! Por que você, quer ser o ganhador da nossa promoção?</h3></div>
+            <div><textarea placeholder="Digite aqui sua motivação!"></textarea></div> <!--criei uma area de texto para o
+            usuario-->
+           
+            <p>Ao clicar em <b>cadastrar</b>, você tambem estará sinalizando que está ciente e de acordo com nossos <u>termos e condições</u>!</p>
+            <div>
+                <input type="submit" name="acao" value="cadastrar"/> <!--Criei um botão para cadastrar (não funciona ainda)-->
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+
+</html>
