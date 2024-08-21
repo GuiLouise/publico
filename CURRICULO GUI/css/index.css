@@ -2,13 +2,16 @@
     margin:0;
     padding:0;
     color:white;
-    background-color:rgb(37, 0, 37);
+
 }
 
 
-
+.pai{
+    display:flex;
+}
 .container{
     padding:0 20px;
+    background-color:rgb(37, 0, 37);
 }
 
 ul{
@@ -42,11 +45,28 @@ a{
 
 main section{
     padding-top:35px;
+    
 }
 
-main section h3:hover{
+main section h3{
     color:rgb(211, 145, 255);    
 }
+
+
+
+
+
+main h4{
+    padding-top:30px;
+    color:rgb(211, 145, 255);
+}
+
+
+
+
+
+
+
 
 footer img{
     width:35px;

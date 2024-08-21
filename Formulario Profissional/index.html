@@ -23,30 +23,30 @@
                 <select name="lista"> <!--Aqui criei uma box com opções predeterminadas para que o usuario escolha uma-->
                     <option disabled selected>Qual sua idade?</option> <!--Disabled desabilitou essa primeira opção que aparece como titulo dessa box
                     e a propiedade selected colocou essa opção sendo a primeira mais especificamente-->
-                    <option>20</option>
-                    <option>entre 20 e 40</option>
-                    <option>maior que 40</option>
+                    <option value="20">20</option>
+                    <option value="25">25+</option>
+                    <option value="40">40+</option>
                 </select>
             </div>
 
             <h3>Qual sua cidade?</h3>
             <div class="cidades"><!--Criando opções pra escolher uma cidade-->
             
-                <div><input type="radio" name="cidade" value=""/><span>Belo Horizonte</span></div>
-                <div><input type="radio" name="cidade" value=""/><span>Contagem</span></div>
-                <div><input type="radio" name="cidade" value=""/><span>Sabará</span></div>
+                <div><input type="radio" name="cidade" value="Belo Horizonte"/><span>Belo Horizonte</span></div>
+                <div><input type="radio" name="cidade" value="Contagem"/><span>Contagem</span></div>
+                <div><input type="radio" name="cidade" value="Sabará"/><span>Sabará</span></div>
             </div>
 
             <h3>Qual sua comida preferida durante a janta?</h3> <!--Criando um checklist de comidas-->
             <div class="comidas">
                 
-                <div><input type="checkbox" name="comida" value=""/><span>Pizza</span></div>
-                <div><input type="checkbox" name="comida" value=""/><span>Hamburguer</span></div>
-                <div><input type="checkbox" name="comida" value=""/><span>Lasanha</span></div>
+                <div><input type="checkbox" name="comida[]" value="Pizza"/><span>Pizza</span></div>
+                <div><input type="checkbox" name="comida[]" value="Hamburguer"/><span>Hamburguer</span></div>
+                <div><input type="checkbox" name="comida[]" value="Lasanha"/><span>Lasanha</span></div>
             </div>
 
             <div><h3>Agora nos diga! Por que você, quer ser o ganhador da nossa promoção?</h3></div>
-            <div><textarea placeholder="Digite aqui sua motivação!"></textarea></div> <!--criei uma area de texto para o
+            <div><textarea name="motivacao" placeholder="Digite aqui sua motivação!"></textarea></div> <!--criei uma area de texto para o
             usuario-->
            
             <p>Ao clicar em <b>cadastrar</b>, você tambem estará sinalizando que está ciente e de acordo com nossos <u>termos e condições</u>!</p>

@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    height:100%;
+
+    font-family:"Roboto";
+}
+
+.site{
+    color:white;
+    text-align:center;
+    font-family:"Qwitcher Grypen";
+    font-size:60px;
+    background-image:url(../imagens/borders.jpg);
+    background-position:center;
+    padding-bottom:20px;
+}
+
+.site h2{
+    font-family:"arial";
+    font-size:20px;
+}
+
+.titulo{
+    display:flex;
+    height:300px;
+    padding-top:50px;
+}
+
+.titulo .esquerda{
+    text-align:center;
+    padding-bottom:30px;
+    padding-left:80px;
+    font-family:"Nunito";
+}
+
+.titulo .direita{
+    text-align:center;
+    line-height:300px;
+    padding-left:100px;
+}
+
+
+
+.sobre p, .sobre a{
+    padding:0 80px;
+}
+
+.sobre h3{
+    padding-left:20px;
+    padding-top:35px;
+    padding-bottom:10px;
+
+}
+.adocao{
+    height:110px;
+    width:100%;
+}
+
+.adocao h2{
+    font-family:"Nunito";
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:20px;
+}
+.adocao input[type="text"]{
+
+    height:100px;
+    width:500px;
+    background-color:rgba(199, 237, 255, 0.712);
+    margin:30px 20px;
+    padding-bottom:40px;
+}

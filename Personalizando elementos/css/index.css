@@ -1,0 +1,76 @@
+*{/*RESETEI AS CONFIGURAÇÕES DE BORDAS*/
+    margin:0; /*BORDA A FORA*/
+    padding:0;/*BORDA A DENTRO*/
+    color:black; /*COR DAS LETRAS*/
+}
+
+body{ /*ALTURA DA PAGINA*/
+    height:100%;
+}
+
+input[type="file"]{ /*CONFIGURANDO O INPUT PARA ARQUIVOS(PRECISA DE MAIS ATENÇÃO POIS É DIFERENTE)*/
+    display:none; /*REMOVI O DISPLAY DO CONTEUDO ORIGINAL*/
+}
+
+label{ /*CHAMEI PARA CONFIGURAR O QUE SERÁ EXIBIDO NO LUGAR DO INPUT*/
+    display:block; /*ORIGININALMENTE ELE É INLINE*/
+    margin:40px auto; 
+    width:250px;
+    height:50px;
+    background-color:#ccc;
+    color:black;
+    text-align:center;
+    line-height:50px; /*CENTRALIZANDO O CONTEUDO NA VERTICAL*/
+    cursor:pointer; /*PESONALIZANDO O PONTEIRO QUANDO ENCOSTAR*/
+    font-size:20px; /*TAMANHO DA FONTE DE TEXTO*/
+}
+
+label:hover{ /*CNFIGURANDO PRA QUANDO O USUARIO PASSAR O MOUSE POR CIMA DO ELEMENTO*/
+    background-color:#999999;
+}
+
+.form2{/*ALTERANDO SOMENTE PARA FACILITAR A VISUALIZAÇÃO DA EDIÇÃO ALVO*/
+    background-color:rgb(145, 255, 255);
+    padding:30px 0;
+    text-align:center;
+}
+
+.form2 select{ /*PERSONALIZANDO A TAG SELECT*/
+    text-align:center; 
+    width:150px; /*DEFININDO AS DIMENSÕES*/
+    height:50px;
+
+/**//**//**//**//**//**//**//**//**//**/
+/**/    -webkit-appearance:none;    /**/    /*REMOVENDO A APARENCIA NO CHROME*/
+/**/    -moz-appearance:none;       /**/    /*REMOVENDO A APARENCIA NO MOZILA*/
+/**//**//**//**//**//**//**//**//**//**/
+
+    border:0; /*TIRANDO A BORDA*/
+    background-image:url('../imagens/github.png'); /*DEFININDO UM ITEM PARA EXIBIÇÃO*/
+    background-size:40px 40px;
+    background-repeat:no-repeat;
+    background-position:3% center; /*ALINHANDO A IMAGEM QUE CHAMEI PRO BACKGROUND*/
+}
+/**//**//**//**//**//**//**//**//**//**//**//**/    /*E TUDO ISSO PRA REMOVER A APARENCIA PADRÃO NO MICROSOFT EDGE/EXPLORER */
+/**/    .form2 select::-ms-expand{          /**/
+/**/        display:none;                   /**/
+/**/    }                                   /**/   
+/**//**//**//**//**//**//**//**//**//**//**//**/
+
+input[type="checkbox"]{
+    display:none;
+}
+
+label:not(1){ /*Selecionei as labels menos a primeira*/
+    display:inline-block;
+    width:100px;
+    height:100px;
+    background-color:green;
+}
+
+input[type="checkbox"]:checked + label{ /*o "+" faz referencia ao proximo item/ o item abaixo*/
+
+    background-color:aquamarine;
+
+   
+}
